@@ -6,6 +6,10 @@ public class Menu {
 		int userInput;
 		Scanner in = new Scanner(System.in);
 		
+	    System.out.println("");
+	    AlertSystem.alert();
+	    System.out.println("");
+		
 		System.out.println("\n****** MAIN MENU *****");
 		System.out.println("Please choose one of the options below, (0-4) ");
 		System.out.println("1. Display Products");
