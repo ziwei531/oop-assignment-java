@@ -12,7 +12,6 @@ public class Product {
 	 * Fruits
 	 * Meat And Fish
 	 * Vegetables
-	 * Bread
 	 * TinFood
 	 */
 	

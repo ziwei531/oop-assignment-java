@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProductListing {
+public class DisplayProducts {
 
 	//Assume 100 is stock limit
 	
@@ -37,7 +37,7 @@ public class ProductListing {
 					vegetable5, tinFood1, tinFood2, tinFood3, tinFood4, tinFood5
 				};
 	
-	public static void product() {
+	public static void displayProduct() {
 		int userInput;
 	
 		Scanner in = new Scanner(System.in);
@@ -45,21 +45,20 @@ public class ProductListing {
 		//Display Categories 
 		
 		while (true) {
+			try {
 				System.out.println("\n**** Display Menu ****");
 				System.out.println("1. Display Fruit Category");
 				System.out.println("2. Display Vegetable Category");
 				System.out.println("3. Display Meat and Fish Category");
 				System.out.println("4. Display Tin Food Category");
-				System.out.println("0. Return to Main Menu\n");
+				System.out.println("5. Return to Display/Add/Update/Delete Sub Menu");
+				System.out.println("6. Return to Main Menu\n");
 				
 				System.out.print("Please key in your option: ");
 				userInput = in.nextInt();
 					
 					
 				switch(userInput) {
-				case 0:
-					Menu.menu();
-					break;
 				case 1:
 					System.out.println("\n**** Fruit Category ****");
 					for (Product m: allProducts) {
@@ -92,13 +91,25 @@ public class ProductListing {
 						}
 					}
 					break;
+				case 5:
+					DisplayAndEditMenu.subMenu();
+					break;
+				case 6:
+					Menu.menu();
+					break;
 				default:
 					System.out.println("You did not enter a valid response. Please try again.");
 					break;
+				}
+			}
+			catch (Exception e) {
+				System.out.println("\n***********\n");
+				System.out.println("You did not enter an appropriate response. Please try again.\n");
+				System.out.println("***********");
+				displayProduct();
+				break;
 			}
 		}
-
-		
 	}
 	
 

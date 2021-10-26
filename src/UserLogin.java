@@ -28,8 +28,9 @@ public class UserLogin {
 				}
 			}
 			catch(Exception e) {
-				System.out.println("Something went wrong please try again.\n");
-				System.out.println(e + "\n");
+				System.out.println("You did not entered an appropriate response. Please try again.\n");
+				login();
+//				System.out.println(e + "\n");
 			}
 		}
 	}
