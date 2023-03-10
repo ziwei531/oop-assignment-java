@@ -21,7 +21,7 @@ This project consists of four classes and methods:
  - The discount features use if-else statements to apply different
    discounts based on product type or quantity purchased.
 
-#Live Demo
+# Live Demo
 A live demo can also be executed [here](https://replit.com/@ziwei531/oop-assignment), which is powered by Replit. 
 
 
