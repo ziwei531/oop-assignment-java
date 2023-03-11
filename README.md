@@ -10,7 +10,7 @@ This project consists of four classes and methods:
 -   Menu.java: The class that displays the main menu and submenus for different functions
 -   Product.java: The class that stores product information and methods for adding, deleting and updating products
 
-### Written by teammates: 
+### Additional Functionality: 
 
  - The alert system uses a loop to check the stock level and expiry date
    of each product and prints a message if they are below a certain
